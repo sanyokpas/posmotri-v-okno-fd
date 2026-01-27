@@ -54,11 +54,12 @@ ol {
 }
 
 .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-areas: "result details";
+  place-items: end;
   gap: 30px;
-  flex-direction: row;
-  align-items: flex-end;
-  min-width: 1140px;
+  inline-size: 1140px;
 }
 
 .result {
@@ -69,7 +70,7 @@ ol {
 .content__list-container {
   width: 399px;
   height: 298px;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -194,14 +195,12 @@ ol {
 
 .search-form__textfield {
   background-color: transparent;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-right: 0;
-  border-left: 0;
-  border-color: rgb(255, 255, 255, 0.7);
-  color: #fff; 
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent; 
   appearance: none;
-  width: 100%;
+  width: 225px;
   min-height: 27px;
 } 
 
@@ -213,18 +212,18 @@ ol {
 
 }
 
-.search-form__textfield:focus-visible {
-  outline: none;
-}
-
 .search-form__textfield:focus {
   outline: none;
 }
 
-.search-form__label:has(:focus-visible) {
+.search-form__textfield:focus-visible {
+  outline: none;
+}
+
+.search-form__label:has(:not(:active):focus-visible) {
   outline: 1px solid #ffffff;
   outline-offset: 2px;
-}
+} 
 
 .search-form__pseudo-checkbox {
   height: 19px;
@@ -244,4 +243,50 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-family: 'Fira Sans Condenced', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  height: 34px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+}
+
+.more-button {
+  width: 100%;
+  padding: 0;
+  margin-left: 3px;
+  margin-bottom: 2px;
+  
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.search-form__textfield:active {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
 }
