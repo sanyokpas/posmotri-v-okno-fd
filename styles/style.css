@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -50,7 +50,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .content {
@@ -63,7 +63,6 @@ ol {
 }
 
 .result {
-  padding-top: 78px;
   min-width: 711px;
 }
 
@@ -92,18 +91,18 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   position: relative;
 }
 
 .title {
-  padding-bottom: 17px;
+  padding-bottom: 23px;
   padding-right: 140px;
   font-weight: 700;
   font-size: 75px;
-  line-height: 0.94; 
+  line-height: 0.94;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .content__details {
@@ -135,6 +134,8 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  position: relative;
+  top: -5px;
 }
 
 .search-form__fieldset-title {
@@ -156,7 +157,7 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   max-width: 192px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .content__video-card-description {
@@ -203,22 +204,22 @@ ol {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   border-right: 1px solid transparent;
-  border-left: 1px solid transparent; 
+  border-left: 1px solid transparent;
   appearance: none;
   width: 225px;
   min-height: 27px;
   color: #ffffff;
-  font-family: 'Fira Sans COndensed', sans-serif;
+  font-family: "Fira Sans COndensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  padding: 2.5px 0; 
-} 
+  padding: 2.5px 0;
+}
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
   font-weight: 400;
   font-size: 18px;
-  font-family: 'Fira Sans COndensed', sans-serif;
+  font-family: "Fira Sans COndensed", sans-serif;
 }
 
 .search-form__textfield:focus {
@@ -232,7 +233,7 @@ ol {
 .search-form__label:has(:not(:active):focus-visible) {
   outline: 1px solid #ffffff;
   outline-offset: 2px;
-} 
+}
 
 .search-form__pseudo-checkbox {
   height: 19px;
@@ -257,7 +258,7 @@ ol {
 .button {
   background-color: transparent;
   border: 1px solid #ffffff;
-  font-family: 'Fira Sans Condenced', sans-serif;
+  font-family: "Fira Sans Condenced", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -273,7 +274,7 @@ ol {
   width: calc(100% - 4px);
   padding: 0;
   margin-left: 3px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   flex-shrink: 0;
 }
 
@@ -328,5 +329,4 @@ ol {
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;
-  padding-top: 2px;
 }
