@@ -86,6 +86,7 @@ ol {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .result__video-container {
@@ -258,7 +259,7 @@ ol {
 .button {
   background-color: transparent;
   border: 1px solid #ffffff;
-  font-family: "Fira Sans Condenced", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -271,7 +272,7 @@ ol {
 }
 
 .more-button {
-  width: calc(100% - 4px);
+  width: calc(100% - 7px);
   padding: 0;
   margin-left: 3px;
   margin-bottom: 3px;
@@ -299,7 +300,13 @@ ol {
   outline-offset: 2px;
 }
 
-.search-form__pseudo-checkbox:hover {
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.search-form__label {
   cursor: pointer;
 }
 
